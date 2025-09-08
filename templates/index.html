@@ -1,82 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кав'ярня Aroma</title>
-    <link rel="stylesheet" href="/project-GoITeens/static/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-
-    <header class="site-header" role="banner">
-        <div class="brand">Кав'ярня Aroma</div>
-        <nav class="nav" role="navigation" aria-label="Основне меню">
-            <a href="#about">Про нас</a>
-            <a href="#menu">Меню</a>
-            <a href="#contacts">Контакти</a>
+    <header class="navbar">
+        <div class="logo">Кав'ярня Aroma</div>
+        <nav>
+            <ul>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
         </nav>
     </header>
 
-<section class="hero"
-    style="background-image: url('#');">
-    <div class="hero-inner">
-        <h1 class="hero-title">Насолоджуйтесь ароматом<br>свіжообсмаженої кави</h1>
-    </div>
-</section>
-
-    <section id="about" class="section">
-        <div class="about">
-            <h2>Про нас</h2>
-            <p>
-                Ласкаво просимо до нашої кав'ярні Aroma! Ми пропонуємо найсвіжішу каву, емачні десерти та затишну
-                атмосферу для вашого відпочинку.
-                Наша команда баристів любить каву так само, як і ви!
-            </p>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Насолоджуйтесь ароматом свіжообсмаженої кави</h1>
         </div>
     </section>
 
-    <section id="menu" class="section" aria-labelledby="menu-heading">
-        <h2 style="text-align:center; font-family: 'Montserrat', sans-serif; font-size:1.9rem; margin:0 0 12px;">Меню
-        </h2>
+    <section class="about">
+        <h2>Про нас</h2>
+        <p>
+            Ласкаво просимо до нашої кав'ярні Aroma! Ми пропонуємо найсвіжішу каву, смачні десерти та затишну атмосферу
+            для вашого відпочинку. Наша команда баристів любить каву так само, як і ви!
+        </p>
+    </section>
 
-        <div class="menu-grid">
-            <article class="card" aria-labelledby="espresso-title">
-                <img src="https://media.istockphoto.com/id/1126871442/de/foto/kaffeetasse.jpg?s=612x612&w=0&k=20&c=3hHEIK2vyKPfJwmERSHpZJS_XUs-12GWJ1dqBWCK8j4=" alt="Еспресо в чашці">
-                <div class="card-body">
-                    <h3 id="espresso-title">Еспресо</h3>
-                    <p>Класичний насичений смак, що бадьорить з першого ковтка.</p>
-                </div>
-            </article>
-
-            <article class="card" aria-labelledby="cappuccino-title">
-                <img src="data:image/jpeg;base64,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" alt="Капучіно у білий чашці">
-                <div class="card-body">
-                    <h3 id="cappuccino-title">Капучіно</h3>
-                    <p>М'який еспресо з молочною пінкою та легким присмаком какао.</p>
-                </div>
-            </article>
-
-            <article class="card" aria-labelledby="latte-title">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgk1cxpSRxNagH32-O2cfNqXLHLp5i5YiEw&s" alt="Лате в склянці">
-                <div class="card-body">
-                    <h3 id="latte-title">Лате</h3>
-                    <p>Ніжна комбінація еспресо та теплого молока з вершковою текстурою.</p>
-                </div>
-            </article>
+    <section class="menu">
+        <h2>Меню</h2>
+        <div class="menu-items">
+            <div class="card">
+                <img src="https://i.ibb.co/7Q3T9fT/espresso.jpg" alt="Еспресо">
+                <h3>Еспресо</h3>
+                <p>Класичний насичений смак, що бадьорить з першого ковтка</p>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/pR8fX4x/cappuccino.jpg" alt="Капучіно">
+                <h3>Капучіно</h3>
+                <p>М’який еспресо з молочною пінкою та легким присмаком какао</p>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/qWdzRVp/latte.jpg" alt="Лате">
+                <h3>Лате</h3>
+                <p>Ніжна комбінація еспресо та теплого молока з вершковою текстурою</p>
+            </div>
         </div>
+    </section>
+
+    <section class="contacts">
+        <h2>Контакти</h2>
     </section>
 </body>
-
-<footer>
-    <section id="contacts" class="section contacts">
-        <h2>Контакти</h2>
-        <p>#</p>
-    </section>
-    <div class="spacer"></div>
-</footer>
 
 </html>
