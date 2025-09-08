@@ -44,6 +44,7 @@ body {
 }
 
 .hero h1 {
+    color: #4b2e2e;
     font-size: 32px;
     max-width: 600px;
 }
@@ -62,12 +63,11 @@ h2 {
 }
 
 .coffee {
+    display: flex;
+    margin: auto;
     width: 450px;
-    height: 600px;
-    background-color: #31bab1;
-    padding: 15px;
-    display: grid;
-    grid-template-rows: auto auto;
+    height: 400px;
+    background-color: #4b2e2e;
     row-gap: 5px;
     border-radius: 10px;
     transition:
@@ -75,18 +75,21 @@ h2 {
         transform 0.3s ease;
 }
 
-/* .coffee:hover {
-    box-shadow: 0 0 10px #0b938a, 0 0 65px #91deda;
-    transform: scale(1.05);
-} */
+.coffee:hover {
+    box-shadow: 0 0 10px #4b2e2e;
+    transform: scale(1.01);
+}
 
 .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     width: 900px;
     height: 370px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    background-color: #00CFC1;
+    background-color: #4b2e2e;
     padding: 15px;
     margin: 0px auto;
     transition:
@@ -127,4 +130,16 @@ h2 {
 .contacts p {
     margin: 8px 0;
     font-size: 18px;
+}
+
+a {
+    transition:
+        box-shadow 0.4s ease,
+        transform 0.3s ease;
+}
+
+
+a:hover {
+        box-shadow: 0 0 10px #ffffff;
+            transform: scale(1.01);
 }
