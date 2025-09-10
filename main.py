@@ -9,6 +9,7 @@ app = Flask(__name__)
 def get():
     return render_template("index.html")
 
+
 @app.route("/signUp/", methods=["GET", "POST"])
 def sign_up():
     sign_up_form = SignUpForm()
