@@ -11,7 +11,7 @@ class SignUpForm(FlaskForm):
         validators=[wtforms.validators.DataRequired(), wtforms.validators.length(min=6)]
     )
     fullname = wtforms.StringField(label="Ваше повне ім'я(за бажанням)")
-    phone_number = wtforms.StringField(label="Ваше номер телефону(за бажанням)")
+    phone_number = wtforms.StringField(label="Ваше номер телефону(за баанням)")
 
     submit = wtforms.SubmitField(label="Зареєструватись")
 
